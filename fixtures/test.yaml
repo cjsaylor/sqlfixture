@@ -1,0 +1,10 @@
+- name: test
+  rows:
+    - id: 1
+      name: "something"
+- name: test2
+  rows:
+    - id: 1
+      slug: "something"
+    - id: 2
+      slug: "something-else"
