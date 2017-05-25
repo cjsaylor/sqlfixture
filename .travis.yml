@@ -12,7 +12,7 @@ services:
   - mysql
 
 before_script:
-  - export MYSQL_DSN=travis@tcp(127.0.0.1:3306)/test
+  - export MYSQL_DSN="travis@tcp(127.0.0.1:3306)/test"
 
 before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS test;'
