@@ -6,7 +6,7 @@ go:
   - 1.x
   - 1.8
 
-service:
+services:
   - docker
 
 before_install:
