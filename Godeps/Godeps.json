@@ -1,0 +1,16 @@
+{
+	"ImportPath": "github.com/cjsaylor/sqlfixture",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/go-sql-driver/mysql",
+			"Comment": "v1.3-16-g3361273",
+			"Rev": "336127359b09c9c8164e39c4c44f4d36ef081dc8"
+		},
+		{
+			"ImportPath": "gopkg.in/yaml.v2",
+			"Rev": "cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b"
+		}
+	]
+}
