@@ -1,5 +1,8 @@
 # sqlfixture
 
+[![GoDoc](https://godoc.org/github.com/cjsaylor/sqlfixture?status.png)](https://godoc.org/github.com/cjsaylor/sqlfixture)
+[![Build Status](https://travis-ci.org/cjsaylor/sqlfixture.svg?branch=master)](https://travis-ci.org/cjsaylor/sqlfixture)
+
 sqlfixture is a go library that enables simple pre-populating a MySQL database with data
 to be used during testing.
 
