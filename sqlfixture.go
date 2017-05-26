@@ -55,7 +55,10 @@ func FromJSON(db *sql.DB, jsonIn []byte) (Fixture, error) {
 // Warning: This will truncate any and all data for each table in the fixture
 func (f *Fixture) Populate() {
 	for _, t := range f.Tables {
-		f.db.Exec(fmt.Sprintf("truncate %v", t.Name))
+		_, err := f.db.Exec(fmt.Sprintf("truncate %v", t.Name))
+		if err != nil {
+			panic(err)
+		}
 		for _, r := range t.Rows {
 			q := "insert into %v (%v) values (?%v)"
 			columns := ""
